@@ -5,13 +5,13 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 html {
   font: normal 100% "open-sans";
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility; 
+  text-rendering: optimizelegibility;
 }
 
 body {
@@ -19,8 +19,33 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  color: #333;
+  font-family: Georgia;
+  font-size: 1.296em;
+  line-height: 150%;
+  margin-top: 1.296em;
+}
+
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 7.594em;
+}
+
+h2 {
+  font-size: 2.041em;
+  font-weight: 700;
+  margin-top: 1.296em;
+}
+
+h3 {
+  color: red;
+  font-size: 0.772em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* ==========================================================================
@@ -29,7 +54,23 @@ h1 {
 
 header {
   background: #111;
+  padding: 1em;
   width: 100%;
+}
+
+aside {
+  background: #f5f5f5;
+  padding: 1em;
+  position: absolute;
+    right: 0;
+    top: 4.8em;
+  width: 240px;
+}
+
+section {
+  width: 100%;
+  padding-right: 20em;
+  position: relative;
 }
 
 .container {
@@ -38,14 +79,66 @@ header {
   width: 90%;
 }
 
+.column {
+  float: left;
+  margin-left: 2%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.row {
+  clear: both;
+}
+
 /* ==========================================================================
    Module Styles
    ========================================================================== */
 
 .logo {
-  background: #fff;
-  height: 80px;
-  width: 80px;
+  float: left;
+}
+
+.main-menu {
+  float: right;
+  margin-left: 2em;
+
+  li {
+    display: inline-block;
+    font-size: 0.878em;
+    font-weight: 700;
+    margin-right: 1em;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.headline {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em;
+}
+
+.section-name {
+  color: red;
+  border-bottom: 3px solid red;
+  padding-bottom: 0.9em;
+}
+
+/* Clearfix
+-------------------------------------------------------------------------- */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
 }
 
 /* ==========================================================================
@@ -55,3 +148,4 @@ header {
 /* ==========================================================================
    Theme Styles
    ========================================================================== */
+

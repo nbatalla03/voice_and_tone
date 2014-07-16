@@ -12,16 +12,18 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body class="<%= page_classes %>">
-    <header>
+    <header class="cf">
       <a class="logo" href="#">Logo</a>
 
-      <ul>
-        <li><a href="#">Voice</a></li>
-        <li><a href="#">Tone</a></li>
-        <li><a href="#">Types of Content</a></li>
-        <li><a href="#">Style Guide</a></li>
-        <li><a href="#">Resources</a></li>
-      </ul>
+      <nav>
+        <ul class="main-menu">
+          <li><a href="#">Voice</a></li>
+          <li><a href="#">Tone</a></li>
+          <li><a href="#">Types of Content</a></li>
+          <li><a href="#">Style Guide</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </nav>
     </header>
     <%= yield %>
     <footer>
