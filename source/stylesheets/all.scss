@@ -33,8 +33,9 @@ a {
 
 ol {
   font-family: "Helvetica Neue";
+  font-size: 1.575rem;
   font-weight: 700;
-  padding-left: 5em;
+  padding-left: 5rem;
 }
 
 h1, h2 {
@@ -56,7 +57,7 @@ h2 {
 
 h3 {
   color: red;
-  font-size: 0.772em;
+  font-size: 0.772rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -154,11 +155,11 @@ aside {
   border-left: 5px solid #eee;
   margin-left: -5%;
   margin-top: 1.296rem;
-  padding: 3em 5em;
+  padding: 3rem 5rem;
 
   p {
     font-family: "Helvetica Neue";
-    font-size: 1.067em;
+    font-size: 1.067rem;
     font-weight: 700;
   }
 }
@@ -201,7 +202,7 @@ aside {
 
     > p {
       // font-family: "Helvetica Neue";
-      font-size: 1.067em;
+      font-size: 1.067rem;
       font-weight: 400;
     }
   }
