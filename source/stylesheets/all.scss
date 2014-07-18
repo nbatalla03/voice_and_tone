@@ -31,6 +31,12 @@ a {
   text-decoration: none;
 }
 
+ol {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  padding-left: 5em;
+}
+
 h1, h2 {
   color: #333;
   font: normal 100% "Helvetica Neue";
@@ -53,6 +59,14 @@ h3 {
   font-size: 0.772em;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+blockquote {
+  color: #333;
+  float: right;
+  font: 700 1.68em "Helvetica Neue";
+  margin: 50px -25% 50px 50px;
+  width: 55%;
 }
 
 /* ==========================================================================
@@ -139,7 +153,7 @@ aside {
   background: #f5f5f5;
   border-left: 5px solid #eee;
   margin-left: -5%;
-  margin-top: 1.296em;
+  margin-top: 1.296rem;
   padding: 3em 5em;
 
   p {
@@ -180,6 +194,19 @@ aside {
     }
   }
 }
+
+.numbered-list {
+
+  li {
+
+    > p {
+      // font-family: "Helvetica Neue";
+      font-size: 1.067em;
+      font-weight: 400;
+    }
+  }
+}
+
 
 /* Clearfix
 -------------------------------------------------------------------------- */
