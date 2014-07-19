@@ -32,9 +32,8 @@ a {
   text-decoration: none;
 }
 
-ol {
+ol, ul {
   color: #333;
-  font-family: "Helvetica Neue";
   font-weight: 700;
   padding-left: 5rem;
 }
@@ -133,7 +132,7 @@ aside {
 
   li {
     display: inline-block;
-    font-size: 0.878em;
+    font-size: 0.723em;
     font-weight: 700;
     margin-right: 1em;
     text-transform: uppercase;
@@ -145,7 +144,7 @@ aside {
 }
 
 .section-head {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e5e5;
   padding: 3.012em 0;
 }
 
@@ -202,12 +201,13 @@ aside {
 }
 
 .numbered-list {
+  border-left: 5px solid red;
 
   li {
 
     > p {
       // font-family: "Helvetica Neue";
-      font-size: 1.067rem;
+      // font-size: 1.067rem;
       font-weight: 400;
     }
   }
