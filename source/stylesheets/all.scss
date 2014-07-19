@@ -21,7 +21,22 @@ body {
 
 header {
   background: #1a1f23;
+  padding: 1.68rem;
   width: 100%;
+}
+
+h1 {
+  font-size: 7.967rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+aside {
+  background: red;
+  position: absolute;
+    right: 0;
+    top: 0;
+  width: 240px;
 }
 
 /* ==========================================================================
@@ -31,6 +46,7 @@ header {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
   width: 90%;
 
   &.main {
@@ -42,17 +58,48 @@ header {
 
 .column { float: left; margin-left: 2%; }
 
+.main-content {
+  padding-right: 10rem;
+}
+
 /* ==========================================================================
    Module Styles
    ========================================================================== */
 
 .main-menu {
-  color: #fff;
   list-style: none;
 
   li {
     display: inline-block;
+    margin-right: 1rem;
+
+    a {
+      color: #fff;
+      font-size: 0.772rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
   }
+}
+
+.main-title {
+  background: url('/images/dot-bg.png');
+  padding: 3.012rem 0;
+  position: relative;
+}
+
+.article-pagination {
+  background: green;
+  margin-right: -2%;
+  position: absolute;
+  padding: 1rem 5rem;
+    right: 0;
+    top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Clearfix
