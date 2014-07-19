@@ -9,7 +9,7 @@
 }
 
 html {
-  font: normal 100% "Helvetica Neue";
+  font: normal 100% Georgia;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
@@ -25,10 +25,26 @@ header {
   width: 100%;
 }
 
+h1, h2 {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+}
+
 h1 {
   font-size: 7.967rem;
-  font-weight: 700;
   text-align: center;
+}
+
+h2 {
+  font-size: 2.041rem;
+  margin-top: 1.68rem;
+}
+
+p {
+  color: #333;
+  font: 400 1.067rem Georgia;
+  line-height: 150%;
+  margin-top: 1.68rem;
 }
 
 aside {
@@ -59,7 +75,7 @@ aside {
 .column { float: left; margin-left: 2%; }
 
 .main-content {
-  padding-right: 10rem;
+  margin-right: 21.073rem;
 }
 
 /* ==========================================================================
