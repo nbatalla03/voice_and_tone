@@ -13,9 +13,18 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="<%= page_classes %>">
-    <header>
-    </header>
-    <%= yield %>
+    <div class="container main">
+      <header>
+        <nav>
+          <ul class="main-menu">
+            <li>Voice</li>
+            <li>Tone</li>
+          </ul>
+        </nav>
+      </header>
+      <%= yield %>
+    </div>
+
     <footer>
     </footer>
   </body>

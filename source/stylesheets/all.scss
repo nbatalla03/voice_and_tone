@@ -15,22 +15,45 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #e6e6e6;
   font-family: sans-serif;
-  padding-top: 48px;
+}
+
+header {
+  background: #1a1f23;
+  width: 100%;
 }
 
 /* ==========================================================================
    Layout Styles
    ========================================================================== */
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+
+  &.main {
+    background: #fff;
+  }
+}
+
+.row { clear: both; }
+
+.column { float: left; margin-left: 2%; }
 
 /* ==========================================================================
    Module Styles
    ========================================================================== */
 
+.main-menu {
+  color: #fff;
+  list-style: none;
 
-
+  li {
+    display: inline-block;
+  }
+}
 
 /* Clearfix
 -------------------------------------------------------------------------- */
