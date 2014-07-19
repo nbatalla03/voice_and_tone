@@ -25,7 +25,7 @@ header {
   width: 100%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Helvetica Neue";
   font-weight: 700;
 }
@@ -37,14 +37,28 @@ h1 {
 
 h2 {
   font-size: 2.041rem;
-  margin-top: 1.68rem;
+  margin-top: 2.823rem;
+}
+
+h3 {
+  color: red;
+  font-size: 0.723rem;
+  text-transform: uppercase;
 }
 
 p {
   color: #333;
-  font: 400 1.067rem Georgia;
+  font: 400 1.215rem Georgia;
   line-height: 150%;
   margin-top: 1.68rem;
+}
+
+ol {
+  border-left: 3px solid #eee;
+  font-size: 1.913rem;
+  font-weight: 700;
+  margin-top: 1.68rem;
+  padding-left: 5.06rem;
 }
 
 aside {
@@ -116,6 +130,34 @@ aside {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.example {
+  background: url('/images/dot-bg.png');
+  border-left: 3px solid #eee;
+  margin-left: -5%;
+  margin-top: 1.68rem;
+  padding: 2.041rem 5.06rem;
+
+  p {
+    font: 700 1rem "Helvetica Neue";
+    line-height: 150%;
+  }
+}
+
+.url-reference {
+  display: block;
+  margin-top: 1.68rem;
+
+  a {
+    font-size: 0.823rem;
+    text-decoration: none;
+  }
+}
+
+.hilight {
+  background: yellow;
+  padding: 0.097rem 0.523rem;
 }
 
 /* Clearfix
