@@ -25,8 +25,8 @@ header {
   width: 100%;
 }
 
-h1, h2, h3 {
-  font-family: "Helvetica Neue";
+h1, h2, h3, blockquote {
+  font-family: "brandon-grotesque";
   font-weight: 700;
 }
 
@@ -36,8 +36,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.041rem;
+  font-size: 3.012rem;
+  line-height: 130%;
   margin-top: 2.823rem;
+  // text-transform: uppercase;
 }
 
 h3 {
@@ -59,6 +61,14 @@ ol {
   font-weight: 700;
   margin-top: 1.68rem;
   padding-left: 5.06rem;
+}
+
+blockquote {
+  float: right;
+  font-size: 1.913rem;
+  font-weight: 700;
+  margin: 3.213rem -20% 3.213rem 3.213rem;
+  width: 55%;
 }
 
 aside {
@@ -90,6 +100,7 @@ aside {
 
 .main-content {
   margin-right: 21.073rem;
+  padding-bottom: 5.06rem;
 }
 
 /* ==========================================================================
@@ -140,7 +151,7 @@ aside {
   padding: 2.041rem 5.06rem;
 
   p {
-    font: 700 1rem "Helvetica Neue";
+    font: 700 1.139rem "brandon-grotesque";
     line-height: 150%;
   }
 }
@@ -155,9 +166,17 @@ aside {
   }
 }
 
+.drop-cap {
+  color: red;
+  float: left;
+  font-size: 5.06rem;
+  font-weight: 700;
+  margin: 0.523rem 0.523rem 0.523rem 0;
+}
+
 .hilight {
   background: yellow;
-  padding: 0.097rem 0.523rem;
+  padding: 0 0.523rem;
 }
 
 /* Clearfix
