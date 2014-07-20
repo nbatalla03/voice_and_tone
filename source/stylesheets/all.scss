@@ -35,6 +35,10 @@ h1 {
   font-size: 10.326rem;
   text-align: center;
   text-shadow: 3px -4px #00a2ff;
+
+  &.smaller-heading-size {
+    font-size: 9.677rem;
+  }
 }
 
 h2 {
@@ -57,12 +61,22 @@ p {
   margin-top: 1.68rem;
 }
 
-ol {
+ol, ul {
   border-left: 3px solid #eee;
   font-size: 1.913rem;
   font-weight: 700;
   margin-top: 1.68rem;
   padding-left: 5.06rem;
+}
+
+ul {
+
+  li {
+
+    p {
+      margin-top: 0.378rem;
+    }
+  }
 }
 
 blockquote {
@@ -110,7 +124,10 @@ aside {
    ========================================================================== */
 
 .main-menu {
+  border-left: 0;
   list-style: none;
+  margin-top: 0;
+  padding-left: 0;
 
   li {
     display: inline-block;
@@ -179,6 +196,11 @@ aside {
 .hilight {
   background: yellow;
   padding: 0 0.523rem;
+}
+
+.end-of-article-marker {
+  color: red;
+  font-size: 1.215em;
 }
 
 /* Clearfix
