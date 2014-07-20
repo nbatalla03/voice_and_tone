@@ -46,6 +46,10 @@ h2 {
   line-height: 130%;
   margin-top: 2.823rem;
   // text-transform: uppercase;
+
+  &:first-child {
+    margin-top: 1.68rem;
+  }
 }
 
 h3 {
@@ -201,6 +205,10 @@ aside {
 .end-of-article-marker {
   color: red;
   font-size: 1.215em;
+}
+
+.grayed-out {
+  color: #888;
 }
 
 /* Clearfix
