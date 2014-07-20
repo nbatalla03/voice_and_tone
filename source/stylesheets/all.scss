@@ -65,6 +65,10 @@ p {
   margin-top: 1.68rem;
 }
 
+a {
+  color: #008aff;
+}
+
 ol, ul {
   border-left: 3px solid #eee;
   font-size: 1.913rem;
@@ -112,6 +116,10 @@ aside {
   &.main {
     background: #fff;
   }
+
+  &.full {
+    width: 100%;
+  }
 }
 
 .row { clear: both; }
@@ -120,7 +128,17 @@ aside {
 
 .main-content {
   margin-right: 21.073rem;
+  margin-top: 5.06rem;
   padding-bottom: 5.06rem;
+
+  &.full {
+    margin-right: 0;
+  }
+
+  &.center {
+    margin-left: 10.5365rem;
+    margin-right: 10.5365rem;
+  }
 }
 
 /* ==========================================================================
@@ -153,19 +171,6 @@ aside {
   position: relative;
 }
 
-.article-pagination {
-  background: green;
-  margin-right: -2%;
-  position: absolute;
-  padding: 1rem 5rem;
-    right: 0;
-    top: 50%;
-
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .example {
   background: url('/images/dot-bg.png');
   border-left: 3px solid #eee;
@@ -180,18 +185,29 @@ aside {
 }
 
 .url-reference {
-  display: block;
+  display: inline-block;
   margin-top: 1.68rem;
 
   a {
     font-size: 0.823rem;
     text-decoration: none;
   }
+
+  &.large {
+    border-left: 3px solid #eee;
+    margin-top: 0.523rem;
+    padding-left: 1rem;
+
+    a {
+      font-size: 1rem;
+    }
+  }
 }
 
 .drop-cap {
   color: red;
   float: left;
+  font-family: "brandon-grotesque";
   font-size: 5.06rem;
   font-weight: 700;
   margin: 0.523rem 0.523rem 0.523rem 0;
@@ -204,7 +220,8 @@ aside {
 
 .end-of-article-marker {
   color: red;
-  font-size: 1.215em;
+  font-size: 1em;
+  vertical-align: middle;
 }
 
 .grayed-out {
