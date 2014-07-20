@@ -25,7 +25,7 @@ header {
   width: 100%;
 }
 
-h1, h2, h3, blockquote {
+h1, h2, h3, blockquote, ul {
   font-family: "brandon-grotesque";
   font-weight: 700;
 }
@@ -67,6 +67,7 @@ p {
 
 a {
   color: #008aff;
+  text-decoration: none;
 }
 
 ol, ul {
@@ -96,11 +97,43 @@ blockquote {
 }
 
 aside {
-  background: red;
+  background: #1a1f23;
   position: absolute;
     right: 0;
     top: 0;
   width: 240px;
+
+  ul {
+    border-left: 0;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+
+    li {
+      border-bottom: 1px solid #333;
+      padding: 0 1rem 1rem;
+
+      a {
+        display: inline-block;
+        font-size: 1.383rem;
+        line-height: 120%;
+        margin-top: 1rem;
+      }
+
+      &:first-child {
+        padding-top: 1rem;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 1rem;
+      }
+
+      &:hover {
+        background: #2e3740;
+      }
+    }
+  }
 }
 
 /* ==========================================================================
@@ -157,9 +190,8 @@ aside {
 
     a {
       color: #fff;
-      font-size: 0.772rem;
+      font-size: 0.937rem;
       font-weight: 700;
-      text-decoration: none;
       text-transform: uppercase;
     }
   }
