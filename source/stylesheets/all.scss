@@ -177,11 +177,6 @@ aside {
   }
 }
 
-.one-fifth {
-  background: red;
-  width: 23.5%;
-}
-
 .main-content {
   margin-right: 21.073rem;
   margin-top: 5.06rem;
@@ -213,12 +208,13 @@ aside {
   border-left: 0;
   float: right;
   list-style: none;
-  margin-top: 0;
+  margin-top: 1.5rem;
   padding-left: 0;
 
   li {
     display: inline-block;
     margin-left: 1rem;
+    vertical-align: baseline;
 
     a {
       color: #fff;
