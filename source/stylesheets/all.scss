@@ -21,7 +21,7 @@ body {
 
 header {
   background: #1a1f23;
-  padding: 1.68rem;
+  // padding: 1.68rem 0;
   width: 100%;
 }
 
@@ -73,10 +73,13 @@ a {
 
 ol, ul {
   border-left: 3px solid #eee;
-  font-size: 1.913rem;
   font-weight: 700;
   margin-top: 1.68rem;
   padding-left: 5.06rem;
+}
+
+ol {
+  font-size: 1.913rem;
 }
 
 ul {
@@ -165,7 +168,19 @@ aside {
 
 .row { clear: both; }
 
-.column { float: left; margin-left: 2%; }
+.column {
+  float: left;
+  margin-left: 2%;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.one-fifth {
+  background: red;
+  width: 23.5%;
+}
 
 .main-content {
   margin-right: 21.073rem;
@@ -186,21 +201,34 @@ aside {
    Module Styles
    ========================================================================== */
 
+.logo {
+  float: left;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
 .main-menu {
   border-left: 0;
+  float: right;
   list-style: none;
   margin-top: 0;
   padding-left: 0;
 
   li {
     display: inline-block;
-    margin-right: 1rem;
+    margin-left: 1rem;
 
     a {
       color: #fff;
       font-size: 0.937rem;
-      font-weight: 700;
+      font-weight: 900;
       text-transform: uppercase;
+
+      &:hover {
+        color: #555;
+      }
     }
   }
 }
@@ -259,6 +287,8 @@ aside {
 
 .hilight {
   background: #ffdd4b;
+  font-family: "brandon-grotesque";
+  font-weight: 700;
   padding: 0 0.523rem;
 }
 

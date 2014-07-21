@@ -13,20 +13,25 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="<%= page_classes %>">
-    <div class="container main">
+    <div class="container">
       <header>
-        <nav>
-          <ul class="main-menu">
-            <li><a href="index.html">Voice</a></li>
-            <li><a href="tone.html">Tone</a></li>
-            <li><a href="types-of-content.html">Types Of Content</a></li>
-            <li><a href="style-guide.html">Style Guide</a></li>
-            <li><a href="resources-for-writers.html">Resources For Writers</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+          <nav class="cf">
+            <a class="logo"><%= image_tag 'logo.jpg' %></a>
+
+            <ul class="main-menu">
+              <li><a href="index.html">Voice</a></li>
+              <li><a href="tone.html">Tone</a></li>
+              <li><a href="types-of-content.html">Types Of Content</a></li>
+              <li><a href="style-guide.html">Style Guide</a></li>
+              <li><a href="resources-for-writers.html">Resources For Writers</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <%= yield %>
     </div>
+
+    <%= yield %>
 
     <footer>
     </footer>
