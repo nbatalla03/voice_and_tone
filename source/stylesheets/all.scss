@@ -26,6 +26,7 @@ header {
 }
 
 h1, h2, h3, blockquote, ul {
+  color: #333;
   font-family: "brandon-grotesque";
   font-weight: 700;
 }
@@ -97,7 +98,8 @@ blockquote {
 }
 
 aside {
-  background: #1a1f23;
+  background: #f2f2f2;
+  box-shadow: 10px 10px 0 #e6e6e6;
   position: absolute;
     right: 0;
     top: 0;
@@ -110,12 +112,14 @@ aside {
     padding-left: 0;
 
     li {
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #d9d9d9;
       padding: 0 1rem 1rem;
 
       a {
+        color: #333;
         display: inline-block;
-        font-size: 1.383rem;
+        font-size: 1.215rem;
+        font-weight: 700;
         line-height: 120%;
         margin-top: 1rem;
       }
@@ -130,7 +134,11 @@ aside {
       }
 
       &:hover {
-        background: #2e3740;
+        background: #fafafa;
+      }
+
+      &:hover a {
+        color: #888;
       }
     }
   }
