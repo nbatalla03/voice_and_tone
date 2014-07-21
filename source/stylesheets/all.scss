@@ -67,7 +67,7 @@ p {
 }
 
 a {
-  color: #008aff;
+  color: #0098ff;
   text-decoration: none;
 }
 
@@ -231,6 +231,10 @@ aside {
   a {
     font-size: 0.823rem;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &.large {
@@ -254,7 +258,7 @@ aside {
 }
 
 .hilight {
-  background: yellow;
+  background: #ffdd4b;
   padding: 0 0.523rem;
 }
 
