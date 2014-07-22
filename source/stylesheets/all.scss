@@ -49,6 +49,7 @@ header {
 footer {
   background: #1a1f23;
   margin: 0 auto;
+  max-width: 1200px;
   width: 90%;
 
   @media (max-width: 400px) {
