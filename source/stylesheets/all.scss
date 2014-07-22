@@ -17,7 +17,7 @@ html {
 body {
   background: #e6e6e6;
   font-family: sans-serif;
-  padding-top: 70px;
+  padding-top: 65px;
 }
 
 header {
@@ -28,6 +28,17 @@ header {
   max-width: 1200px;
   width: 90%;
   z-index: 100;
+
+  a {
+    color: #fff;
+    font-size: 0.937rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #555;
+    }
+  }
 }
 
 footer {
@@ -107,6 +118,19 @@ blockquote {
   font-weight: 700;
   margin: 3.213rem -20% 3.213rem 3.213rem;
   width: 55%;
+
+  @media (max-width: 980px) {
+    margin: 3.213rem 0 3.213rem 3.213rem;
+  }
+
+  @media (max-width: 640px) {
+    border-bottom: 3px solid #333;
+    border-top: 3px solid #333;
+    float: none;
+    margin: 3.213rem 0 3.213rem 0;
+    padding: 1.296rem 0;
+    width: 100%;
+  }
 }
 
 aside {
@@ -154,6 +178,18 @@ aside {
       }
     }
   }
+
+  @media (max-width: 980px) {
+    float: right;
+    margin: 0 0 3.213rem 3.213rem;
+    position: static;
+  }
+
+  @media (max-width: 660px) {
+    float: none;
+    margin: 0 0 3.213rem 0;
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
@@ -198,6 +234,15 @@ aside {
   &.center {
     margin-left: 10.5365rem;
     margin-right: 10.5365rem;
+
+    @media (max-width: 980px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 980px) {
+    margin-right: 0;
   }
 }
 
@@ -213,7 +258,7 @@ aside {
   }
 }
 
-.main-menu {
+.main-menu, .drop-down-menu {
   border-left: 0;
   float: right;
   list-style: none;
@@ -225,16 +270,17 @@ aside {
     margin-left: 1rem;
     vertical-align: baseline;
 
-    a {
-      color: #fff;
-      font-size: 0.937rem;
-      font-weight: 900;
-      text-transform: uppercase;
-
-      &:hover {
-        color: #555;
-      }
+    @media (max-width: 880px) {
+      display: none;
     }
+  }
+}
+
+.drop-down-menu {
+  display: none;
+
+  @media (max-width: 880px) {
+    display: block;
   }
 }
 
@@ -254,6 +300,10 @@ aside {
   p {
     font: 700 1.139rem "brandon-grotesque";
     line-height: 150%;
+  }
+
+  @media (max-width: 980px) {
+    margin-left: 0;
   }
 }
 
