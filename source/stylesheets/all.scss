@@ -25,6 +25,10 @@ header {
   width: 100%;
 }
 
+footer {
+  background: #1a1f23;
+}
+
 h1, h2, h3, blockquote, ul {
   color: #333;
   font-family: "brandon-grotesque";
@@ -54,7 +58,7 @@ h2 {
 }
 
 h3 {
-  color: red;
+  color: #ec342c;
   font-size: 0.723rem;
   text-transform: uppercase;
 }
@@ -273,7 +277,7 @@ aside {
 }
 
 .drop-cap {
-  color: red;
+  color: #ec342c;
   float: left;
   font-family: "brandon-grotesque";
   font-size: 5.06rem;
@@ -289,13 +293,36 @@ aside {
 }
 
 .end-of-article-marker {
-  color: red;
+  color: #ec342c;
   font-size: 1em;
   vertical-align: middle;
 }
 
 .grayed-out {
   color: #888;
+}
+
+.scroll-to-top {
+  background: #0098ff;
+  padding: 1.913rem 0;
+  text-align: center;
+
+  h3 {
+    color: #0065ab;
+    font-size: 1.296rem;
+    font-weight: 900;
+    margin-top: 0.595rem;
+  }
+
+  p {
+    margin-top: 0;
+
+    i {
+      color: #0065ab;
+      font-size: 1.913rem;
+      font-weight: 700;
+    }
+  }
 }
 
 /* Clearfix
