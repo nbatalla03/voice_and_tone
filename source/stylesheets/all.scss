@@ -182,6 +182,12 @@ aside {
     margin-top: 0;
     padding-left: 0;
 
+    @media (max-width: 400px) {
+      border-bottom: 0;
+      border-top: 0;
+      padding-bottom: 0;
+    }
+
     li {
       border-bottom: 1px solid #d9d9d9;
       padding: 0 1rem 1rem;
