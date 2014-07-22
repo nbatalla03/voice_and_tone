@@ -17,12 +17,17 @@ html {
 body {
   background: #e6e6e6;
   font-family: sans-serif;
+  padding-top: 70px;
 }
 
 header {
   background: #1a1f23;
   // padding: 1.68rem 0;
-  width: 100%;
+  position: fixed;
+    top: 0;
+  max-width: 1200px;
+  width: 90%;
+  z-index: 100;
 }
 
 footer {
@@ -39,7 +44,7 @@ h1 {
   color: rgba(0,0,0,0.4);
   font-size: 10.326rem;
   text-align: center;
-  text-shadow: 3px -4px #00a2ff;
+  text-shadow: 3px -4px #0098ff;
 
   &.smaller-heading-size {
     font-size: 9.677rem;
@@ -304,6 +309,7 @@ aside {
 
 .back-to-top {
   background: #0098ff;
+  cursor: pointer;
   padding: 1.296rem 0;
   text-align: center;
 
