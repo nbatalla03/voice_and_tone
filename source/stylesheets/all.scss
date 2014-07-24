@@ -301,10 +301,21 @@ aside {
    ========================================================================== */
 
 .logo {
+  background: url('/images/logo.jpg') no-repeat;
+  display: inline-block;
+  height: 65px;
   margin-left: 5%;
+  vertical-align: bottom;
+  width: 100px;
 
   img {
     vertical-align: bottom;
+  }
+
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background: url('/images/logo-2x.jpg') no-repeat;
   }
 }
 
