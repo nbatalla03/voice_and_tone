@@ -52,6 +52,15 @@ footer {
   max-width: 1200px;
   width: 90%;
 
+  p {
+    color: #555555;
+    font-family: "brandon-grotesque";
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
   @media (max-width: 400px) {
     width: 100%;
   }
@@ -297,18 +306,19 @@ aside {
    ========================================================================== */
 
 .logo {
-  float: left;
+  margin-left: 5%;
 
   img {
     vertical-align: bottom;
   }
 }
 
-.main-menu, .drop-down-menu {
+.main-menu, .drop-down-menu-button {
   border-left: 0;
   float: right;
   list-style: none;
   margin-top: 1.5rem;
+  margin-right: 5%;
   padding-left: 0;
 
   li {
@@ -322,7 +332,43 @@ aside {
   }
 }
 
-.drop-down-menu {
+.main-menu {
+
+  @media(max-width: 880px) {
+    background: #21272b;
+    display: none;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    position: fixed;
+    width: 90%;
+
+    li {
+      border-bottom: 1px solid #1a1f22;
+      display: block;
+      margin-left: 0;
+      text-align: center;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a {
+        display: block;
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media(max-width: 400px) {
+    border-bottom: none;
+    border-top: none;
+    padding-bottom: 0;
+    width: 100%;
+  }
+}
+
+.drop-down-menu-button {
   display: none;
   margin-top: 1.067rem;
 
