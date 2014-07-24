@@ -12,8 +12,16 @@ $(function() {
       }, 600);
   });
 
+  var showOrHide = true;
+
   $('[data-id="drop-down-menu-button"]').click(function() {
-    $('.main-menu').toggle();
+    if (showOrHide) {
+      $('.main-menu').addClass('visible');
+      showOrHide = false;
+    } else {
+      $('.main-menu').removeClass('visible');
+      showOrHide = true;
+    }
   });
 });
 
