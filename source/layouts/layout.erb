@@ -6,6 +6,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "8th Light Communication Style Guide" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
     <script type="text/javascript" src="//use.typekit.net/aht8xft.js"></script>
@@ -13,21 +14,44 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="<%= page_classes %>">
-    <header class="cf">
-      <a class="logo" href="#">Logo</a>
+    <div class="container">
+      <header>
+        <!-- <div class="container"> -->
+          <nav class="cf">
+            <a class="logo"></a>
 
-      <nav>
-        <ul class="main-menu">
-          <li><a href="#">Voice</a></li>
-          <li><a href="#">Tone</a></li>
-          <li><a href="#">Types of Content</a></li>
-          <li><a href="#">Style Guide</a></li>
-          <li><a href="#">Resources</a></li>
-        </ul>
-      </nav>
-    </header>
+            <ul class="main-menu">
+              <li><a href="index.html">Voice</a></li>
+              <li><a href="tone.html">Tone</a></li>
+              <li><a href="types-of-content.html">Types Of Content</a></li>
+              <li><a href="style-guide.html">Style Guide</a></li>
+              <li><a href="resources-for-writers.html">Resources For Writers</a></li>
+            </ul>
+
+            <span class="drop-down-menu-button" data-id="drop-down-menu-button"><a><i class="fa fa-bars"></i></a></span>
+          </nav>
+        <!-- </div> -->
+      </header>
+    </div>
+
     <%= yield %>
+
     <footer>
+      <div class="row back-to-top" data-id="back-to-top">
+        <div class="container">
+          <p><i class="fa fa-arrow-circle-o-up"></i></p>
+          <h3>Back To Top</h3>
+        </div>
+      </div>
+
+      <div class="container copyright">
+        <p>&copy; 2014 8th Light, Inc.</p>
+      </div>
     </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="javascripts/plugins.js"></script>
+    <script src="javascripts/main.js"></script>
   </body>
 </html>
