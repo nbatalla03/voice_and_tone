@@ -12,6 +12,10 @@ html {
   font: normal 100% Georgia;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
+
+  @media (max-width: 400px) {
+    font-size: 90%;
+  }
 }
 
 body {
@@ -382,10 +386,10 @@ aside {
 .drop-down-menu-button {
   cursor: pointer;
   display: none;
-  margin-top: 1.067rem;
+  margin-top: 17.07200050354004px;
 
   a {
-    font-size: 1.913em;
+    font-size: 31px;
   }
 
   @media (max-width: 880px) {
