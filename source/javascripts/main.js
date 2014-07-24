@@ -12,16 +12,18 @@ $(function() {
       }, 600);
   });
 
-  var showOrHide = true;
+  (function(){
+    var showOrHide = true;
 
-  $('[data-id="drop-down-menu-button"]').click(function() {
-    if (showOrHide) {
-      $('.main-menu').addClass('visible');
-      showOrHide = false;
-    } else {
-      $('.main-menu').removeClass('visible');
-      showOrHide = true;
-    }
-  });
+    $('[data-id="drop-down-menu-button"]').click(function() {
+      if (showOrHide) {
+        $('.main-menu').addClass('visible');
+        showOrHide = false;
+      } else {
+        $('.main-menu').removeClass('visible');
+        showOrHide = true;
+      }
+    });
+  })();
 });
 
