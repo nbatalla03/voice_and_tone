@@ -320,8 +320,9 @@ aside {
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
     background: url('/images/logo-2x.jpg') no-repeat;
-    height: 130px;
-    width: 200px;
+    background-size: cover;
+    height: 65px;
+    width: 100px;
   }
 }
 
